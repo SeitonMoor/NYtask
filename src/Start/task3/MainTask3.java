@@ -1,14 +1,12 @@
-package Start.task2;
-
-import java.util.Scanner;
+package Start.task3;
 
 import java.util.Arrays;
+import java.util.Scanner;
 
-public class MainTask2 {
+public class MainTask3 {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
-        int result;
 
         System.out.println("Введите число №1:");
         int number = sc.nextInt();
@@ -20,8 +18,7 @@ public class MainTask2 {
 
         int[] array = new int[]{number, number1, number2};
         Arrays.sort(array);
-        result = array[1] + array[2];
 
-        System.out.println("Сумма двух наибольших чисел: " + result);
+        System.out.println(Arrays.toString(array));
     }
 }
